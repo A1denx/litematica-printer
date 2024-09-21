@@ -19,7 +19,7 @@ public class LitematicaMod implements ModInitializer {
     public static Printer printer;
 
     // Config settings
-    public static final ConfigInteger PRINTING_INTERVAL = new ConfigInteger("printingInterval", 12, 1, 40, "Printing interval. Lower values mean faster printing speed.\nIf the printer creates \"ghost blocks\" or blocks are facing the wrong way, raise this value.");
+    public static final ConfigInteger PRINTING_INTERVAL = new ConfigInteger("printingInterval", 12, 0.5, 40, "Printing interval. Lower values mean faster printing speed.\nIf the printer creates \"ghost blocks\" or blocks are facing the wrong way, raise this value.");
     public static final ConfigDouble PRINTING_RANGE = new ConfigDouble("printingRange", 5, 2.5, 5, "Printing block place range\nLower values are recommended for servers.");
     //    public static final ConfigBoolean PRINT_WATER    = new ConfigBoolean("printWater",    false, "Whether the printer should place water\n source blocks or make blocks waterlogged.");
 //    public static final ConfigBoolean PRINT_IN_AIR = new ConfigBoolean("printInAir", true, "Whether or not the printer should place blocks without anything to build on.\nBe aware that some anti-cheat plugins might notice this.");
